@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>StrideX Footwear - Premium Online Shoes Store</title>
+
+<style>
+    body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background: #f4f4f4; }
+
+    /* NAVIGATION */
+    .navbar {
+        display: flex; justify-content: space-between; align-items: center;
+        padding: 15px 60px; background: #111; color: white; position: sticky; top: 0; z-index: 10;
+    }
+
+    .navbar a { color: white; margin-left: 20px; text-decoration: none; font-weight: bold; }
+
+    /* HERO */
+    .hero {
+        width: 100%; height: 550px;
+        background-image: url('https://img.freepik.com/premium-psd/running-shoes-brand-product-landing-page-template_154386-130.jpg?w=1380');
+        background-size: cover; background-position: center;
+        display: flex; align-items: center; padding-left: 60px; color: white;
+    }
+
+    .hero h1 { font-size: 60px; text-shadow: 0px 4px 20px #000; }
+    .hero p { font-size: 22px; width: 40%; margin-top: -10px; }
+    .hero button {
+        margin-top: 20px; padding: 14px 28px; font-size: 20px;
+        background-color: #ff4500; color: white; border: none; border-radius: 6px; cursor: pointer;
+    }
+
+    /* CATEGORY SECTION */
+    .category-section { margin-top: 60px; padding: 40px; text-align: center; }
+    .category-grid {
+        margin-top: 40px; display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px; padding: 0 80px;
+    }
+    .category-card {
+        background: white; border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1); overflow: hidden;
+    }
+    .category-card img { width: 100%; height: 260px; object-fit: cover; }
+    .category-card h3 { padding: 15px; }
+
+    /* FEATURED PRODUCTS */
+    .section-title { text-align: center; font-size: 36px; margin-top: 50px; }
+
+    .products {
+        display: flex; justify-content: center; gap: 30px;
+        padding: 30px 40px; flex-wrap: wrap;
+    }
+    .product-card {
+        width: 320px; background: white; border-radius: 12px;
+        padding-bottom: 20px; box-shadow: 0 0 15px rgba(0,0,0,0.12); text-align: center;
+    }
+    .product-card img {
+        width: 100%; height: 260px; border-radius: 12px 12px 0 0; object-fit: cover;
+    }
+    .price { font-size: 22px; font-weight: bold; color: green; }
+    .product-card button {
+        margin-top: 12px; padding: 10px 20px; background-color: #111;
+        color: white; border: none; border-radius: 6px; cursor: pointer;
+    }
+
+    /* TRENDING GRID */
+    .trending-grid {
+        margin: 50px auto; width: 90%;
+        display: grid; grid-template-columns: repeat(4, 1fr); gap: 25px;
+    }
+    .trend-card {
+        background: white; border-radius: 10px;
+        padding-bottom: 15px; box-shadow: 0 0 15px rgba(0,0,0,0.12); text-align: center;
+    }
+    .trend-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px 10px 0 0; }
+
+    /* NEWSLETTER */
+    .newsletter {
+        background: #222; padding: 50px 20px;
+        text-align: center; color: white; margin-top: 60px;
+    }
+    .newsletter input {
+        padding: 15px; width: 350px; border-radius: 6px;
+        border: none; margin-right: 10px; font-size: 16px;
+    }
+    .newsletter button {
+        padding: 15px 25px; background: #ff4500; border: none;
+        border-radius: 6px; font-size: 18px; color: white; cursor: pointer;
+    }
+
+    /* FOOTER */
+    footer {
+        background: #111; padding: 40px; color: white;
+        display: grid; grid-template-columns: repeat(4, 1fr);
+    }
+    footer h3 { margin-bottom: 15px; }
+    footer a { color: #bbb; text-decoration: none; }
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="navbar">
+    <h2>StrideX</h2>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Kids</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <div>
+        <h1>Great Shoes, Great Strides</h1>
+        <p>Discover premium performance footwear, stylish sneakers, and comfortable running shoes for every step.</p>
+        <button>Explore Collection</button>
+    </div>
+</div>
+
+<!-- CATEGORY SECTION -->
+<div class="category-section">
+    <h2 class="section-title">Shop by Category</h2>
+
+    <div class="category-grid">
+
+        <div class="category-card">
+            <img src="https://images.creativemarket.com/0.1.0/ps/11291129/1170/1500/m1/fpnw/wm0/shome-1170x1500_1-.jpg">
+            <h3>Sports Shoes</h3>
+        </div>
+
+        <div class="category-card">
+            <img src="https://www.omnisend.com/blog/wp-content/uploads/2024/08/Nike-homepage.jpg">
+            <h3>Casual Sneakers</h3>
+        </div>
+
+        <div class="category-card">
+            <img src="https://img.freepik.com/premium-psd/running-shoes-brand-product-landing-page-template_154386-130.jpg?w=1380">
+            <h3>Running Collection</h3>
+        </div>
+
+    </div>
+</div>
+
+<!-- FEATURED PRODUCTS -->
+<h2 class="section-title">Featured Footwear</h2>
+<div class="products">
+
+    <div class="product-card">
+        <img src="https://www.omnisend.com/blog/wp-content/uploads/2024/08/Nike-homepage.jpg">
+        <h3>Nike Runner Pro</h3>
+        <p class="price">$129.99</p>
+        <button onclick="addToCart('Nike Runner Pro')">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="https://images.creativemarket.com/0.1.0/ps/11291129/1170/1500/m1/fpnw/wm0/shome-1170x1500_1-.jpg">
+        <h3>Urban Sport X</h3>
+        <p class="price">$89.99</p>
+        <button onclick="addToCart('Urban Sport X')">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="https://img.freepik.com/premium-psd/running-shoes-brand-product-landing-page-template_154386-130.jpg?w=1380">
+        <h3>TrailMaster Z</h3>
+        <p class="price">$149.99</p>
+        <button onclick="addToCart('TrailMaster Z')">Add to Cart</button>
+    </div>
+
+</div>
+
+<!-- TRENDING GRID -->
+<h2 class="section-title">Trending Now</h2>
+<div class="trending-grid">
+
+    <div class="trend-card">
+        <img src="https://www.omnisend.com/blog/wp-content/uploads/2024/08/Nike-homepage.jpg">
+        <h4>SpeedFlex Prime</h4>
+        <p>$119.99</p>
+    </div>
+
+    <div class="trend-card">
+        <img src="https://images.creativemarket.com/0.1.0/ps/11291129/1170/1500/m1/fpnw/wm0/shome-1170x1500_1-.jpg">
+        <h4>Stride Comfort Max</h4>
+        <p>$99.99</p>
+    </div>
+
+    <div class="trend-card">
+        <img src="https://img.freepik.com/premium-psd/running-shoes-brand-product-landing-page-template_154386-130.jpg?w=1380">
+        <h4>Alpha RoadRunner</h4>
+        <p>$149.99</p>
+    </div>
+
+    <div class="trend-card">
+        <img src="https://www.omnisend.com/blog/wp-content/uploads/2024/08/Nike-homepage.jpg">
+        <h4>NeoGrip Airflow</h4>
+        <p>$139.99</p>
+    </div>
+
+</div>
+
+<!-- NEWSLETTER -->
+<div class="newsletter">
+    <h2>Subscribe to our Newsletter</h2>
+    <p>Get exclusive offers & updates on new arrivals.</p>
+    <input type="email" placeholder="Enter your email">
+    <button>Subscribe</button>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <div>
+        <h3>StrideX</h3>
+        <p>Premium footwear for every step.</p>
+    </div>
+    <div>
+        <h3>Shop</h3>
+        <a href="#">Men</a><br>
+        <a href="#">Women</a><br>
+        <a href="#">Kids</a>
+    </div>
+    <div>
+        <h3>Company</h3>
+        <a href="#">About</a><br>
+        <a href="#">Careers</a><br>
+        <a href="#">Store Locator</a>
+    </div>
+    <div>
+        <h3>Support</h3>
+        <a href="#">Contact</a><br>
+        <a href="#">Shipping</a><br>
+        <a href="#">Returns</a>
+    </div>
+</footer>
+
+<script>
+function addToCart(product) {
+    alert(product + " added to cart!");
+}
+</script>
+
+</body>
+</html>
